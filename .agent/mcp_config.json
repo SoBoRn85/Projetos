@@ -1,0 +1,49 @@
+{
+    "mcpServers": {
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp",
+                "--api-key",
+                "YOUR_API_KEY"
+            ]
+        },
+        "shadcn": {
+            "command": "npx",
+            "args": [
+                "shadcn@latest",
+                "mcp"
+            ]
+        },
+        "github": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "-e",
+                "GITHUB_PERSONAL_ACCESS_TOKEN=YOUR_GITHUB_TOKEN",
+                "ghcr.io/github/github-mcp-server:latest"
+            ]
+        }
+    },
+    "mcp": {
+        "servers": {
+            "MCP_DOCKER": {
+                "command": "docker",
+                "args": [
+                    "mcp",
+                    "gateway",
+                    "run",
+                    "--profile",
+                    "my_profile"
+                ],
+                "type": "stdio"
+            }
+        }
+    }
+}
+
+// setup mcp server in  ~/.gemini\antigravity\mcp_config.json
+
