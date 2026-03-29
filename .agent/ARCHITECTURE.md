@@ -215,15 +215,16 @@ skill-name/
 | `ui-ux-pro-max`     | 27    | 50 styles, 21 palettes, 50 fonts    |
 | `app-builder`       | 20    | Full-stack scaffolding              |
 | `skill-creator`     | 13    | Create and evaluate skills          |
+| `master-skill`      | 5     | AI frameworks and skill management  |
 
 ---
 
-## 📊 Statistics
+## 📈 Statistics
 
 | Metric              | Value                         |
 | ------------------- | ----------------------------- |
 | **Total Agents**    | 20                            |
-| **Total Skills**    | 37                            |
+| **Total Skills**    | 38                            |
 | **Total Workflows** | 11                            |
 | **Total Scripts**   | 2 (master) + 21 (skill-level) |
 | **Coverage**        | ~90% web/mobile development   |
