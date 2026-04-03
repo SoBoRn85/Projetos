@@ -22,7 +22,7 @@ Antigravity Kit is a modular system consisting of:
 ├── agents/                  # 20 Specialist Agents
 ├── skills/                  # 50 Skills
 ├── workflows/               # 11 Slash Commands
-├── rules/                   # Global Rules
+├── rules/                   # Global Rules & Operational Protocol
 └── scripts/                 # Master Validation Scripts
 ```
 
@@ -239,6 +239,7 @@ skill-name/
 | **Total Skills**    | 50                            |
 | **Total Workflows** | 11                            |
 | **Total Scripts**   | 2 (master) + 21 (skill-level) |
+| **Operational Rules** | 2 (GEMINI, PROTOCOL)       |
 | **Coverage**        | ~95% modern software delivery |
 
 ---
@@ -314,5 +315,7 @@ For details, see [scripts/README.md](scripts/README.md)
 | Database | `database-architect`  | database-design, prisma-expert                |
 | Security | `security-auditor`    | vulnerability-scanner                         |
 | Testing  | `test-engineer`       | testing-patterns, webapp-testing              |
-| Debug    | `debugger`            | systematic-debugging                          |
+| Debug    | `debugger`            | systematic-debugging                  |
 | Plan     | `project-planner`     | brainstorming, tlc-spec-driven                |
+| Rules    | `orchestrator`        | global_rules, operational_protocol            |
+| Security | `security-auditor`    | security-best-practices, vulnerability-scanner |

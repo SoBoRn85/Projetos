@@ -112,6 +112,15 @@ When user's prompt is NOT in English:
 - **Performance**: Measure first. Adhere to 2025 standards (Core Web Vitals).
 - **Infra/Safety**: 5-Phase Deployment. Verify secrets security.
 
+### 💎 Core Principles (Operational)
+
+**Agents MUST adhere to the `@[rules/OPERATIONAL_PROTOCOL]` at all times.**
+
+- **Simplicity First**: Minimal impact, no over-engineering.
+- **No Laziness**: Find root causes, NOT just symptoms.
+- **Minimal Impact**: Touch only what's necessary.
+- **Execution Proof**: Proof of work is REQUIRED for every task completion.
+
 ### 📁 File Dependency Awareness
 
 **Before modifying ANY file:**
@@ -169,8 +178,10 @@ When user's prompt is NOT in English:
 | ----------------------- | -------------- | ----------------------------------------------------------------- |
 | **New Feature / Build** | Deep Discovery | ASK minimum 3 strategic questions                                 |
 | **Code Edit / Bug Fix** | Context Check  | Confirm understanding + ask impact questions                      |
+| **Plan Mode Default**   | Proactive      | Enter plan mode for ANY task with 3+ steps or architecture change |
 | **Vague / Simple**      | Clarification  | Ask Purpose, Users, and Scope                                     |
 | **Full Orchestration**  | Gatekeeper     | **STOP** subagents until user confirms plan details               |
+| **Final Verification**  | Proof of Work  | **STOP** → Ask: "Would a staff engineer approve this?"           |
 | **Direct "Proceed"**    | Validation     | **STOP** → Even if answers are given, ask 2 "Edge Case" questions |
 
 **Protocol:**
