@@ -9,7 +9,7 @@
 Antigravity Kit is a modular system consisting of:
 
 - **20 Specialist Agents** - Role-based AI personas
-- **36 Skills** - Domain-specific knowledge modules
+- **50 Skills** - Domain-specific knowledge modules
 - **11 Workflows** - Slash command procedures
 
 ---
@@ -20,7 +20,7 @@ Antigravity Kit is a modular system consisting of:
 .agent/
 ├── ARCHITECTURE.md          # This file
 ├── agents/                  # 20 Specialist Agents
-├── skills/                  # 36 Skills
+├── skills/                  # 50 Skills
 ├── workflows/               # 11 Slash Commands
 ├── rules/                   # Global Rules
 └── scripts/                 # Master Validation Scripts
@@ -70,6 +70,8 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `tailwind-patterns`     | Tailwind CSS v4 utilities                                             |
 | `frontend-design`       | UI/UX patterns, design systems                                        |
 | `ui-ux-pro-max`         | 50 styles, 21 palettes, 50 fonts                                      |
+| `frontend-blueprint`    | Blueprints de arquitetura frontend moderna                            |
+| `shopify-developer`     | Desenvolvimento especializado para Shopify                            |
 
 ### Backend & API
 
@@ -77,8 +79,9 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | ----------------------- | ------------------------------ |
 | `api-patterns`          | REST, GraphQL, tRPC            |
 | `nestjs-expert`         | NestJS modules, DI, decorators |
-| `nodejs-best-practices` | Node.js async, modules         |
-| `python-patterns`       | Python standards, FastAPI      |
+| `nodejs-best-practices` | Node.js async, modules                                 |
+| `python-patterns`       | Python standards, FastAPI                              |
+| `nestjs-modular-monolith`| Padrões para arquitetura modular no NestJS             |
 
 ### Database
 
@@ -98,8 +101,11 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | Skill                   | Description               |
 | ----------------------- | ------------------------- |
 | `docker-expert`         | Containerization, Compose |
-| `deployment-procedures` | CI/CD, deploy workflows   |
-| `server-management`     | Infrastructure management |
+| `deployment-procedures` | CI/CD, deploy workflows                                |
+| `server-management`     | Infrastructure management                              |
+| `aws-advisor`           | Consultoria especializada em arquitetura AWS           |
+| `google-cloud-advisor`  | Consultoria especializada em Google Cloud              |
+| `azure-advisor`         | Consultoria especializada em Microsoft Azure           |
 
 ### Testing & Quality
 
@@ -123,9 +129,11 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | Skill           | Description                |
 | --------------- | -------------------------- |
 | `app-builder`   | Full-stack app scaffolding |
-| `architecture`  | System design patterns     |
-| `plan-writing`  | Task planning, breakdown   |
-| `brainstorming` | Socratic questioning       |
+| `architecture`  | System design patterns                             |
+| `plan-writing`  | Task planning, breakdown                           |
+| `brainstorming` | Socratic questioning                               |
+| `tlc-spec-driven`| Desenvolvimento orientado a especificações         |
+| `mermaid-studio`| Criação e renderização de diagramas Mermaid        |
 
 ### Mobile
 
@@ -143,8 +151,10 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 | Skill              | Description                   |
 | ------------------ | ----------------------------- |
-| `seo-fundamentals` | SEO, E-E-A-T, Core Web Vitals |
-| `geo-fundamentals` | GenAI optimization            |
+| `seo-fundamentals` | SEO, E-E-A-T, Core Web Vitals                         |
+| `geo-fundamentals` | GenAI optimization                                    |
+| `solo-founder-gtm` | Estratégia Go-to-Market para fundadores (GTM)         |
+| `excalidraw-studio`| Desenho e prototipação com Excalidraw                 |
 
 ### Shell/CLI
 
@@ -165,6 +175,8 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `i18n-localization`       | Internationalization      |
 | `performance-profiling`   | Web Vitals, optimization  |
 | `systematic-debugging`    | Troubleshooting           |
+| `confluence-assistant`    | Integração e gestão de docs no Confluence |
+| `jira-assistant`          | Gestão de tickets e workflow no Jira      |
 
 ---
 
@@ -224,10 +236,10 @@ skill-name/
 | Metric              | Value                         |
 | ------------------- | ----------------------------- |
 | **Total Agents**    | 20                            |
-| **Total Skills**    | 38                            |
+| **Total Skills**    | 50                            |
 | **Total Workflows** | 11                            |
 | **Total Scripts**   | 2 (master) + 21 (skill-level) |
-| **Coverage**        | ~90% web/mobile development   |
+| **Coverage**        | ~95% modern software delivery |
 
 ---
 
@@ -281,10 +293,10 @@ For details, see [scripts/README.md](scripts/README.md)
 | Metric              | Value                         |
 | ------------------- | ----------------------------- |
 | **Total Agents**    | 20                            |
-| **Total Skills**    | 36                            |
+| **Total Skills**    | 50                            |
 | **Total Workflows** | 11                            |
-| **Total Scripts**   | 2 (master) + 18 (skill-level) |
-| **Coverage**        | ~90% web/mobile development   |
+| **Total Scripts**   | 2 (master) + 21 (skill-level) |
+| **Coverage**        | ~95% modern software delivery |
 
 ---
 
@@ -292,11 +304,15 @@ For details, see [scripts/README.md](scripts/README.md)
 
 | Need     | Agent                 | Skills                                |
 | -------- | --------------------- | ------------------------------------- |
-| Web App  | `frontend-specialist` | react-best-practices, frontend-design |
-| API      | `backend-specialist`  | api-patterns, nodejs-best-practices   |
-| Mobile   | `mobile-developer`    | mobile-design                         |
-| Database | `database-architect`  | database-design, prisma-expert        |
-| Security | `security-auditor`    | vulnerability-scanner                 |
-| Testing  | `test-engineer`       | testing-patterns, webapp-testing      |
-| Debug    | `debugger`            | systematic-debugging                  |
-| Plan     | `project-planner`     | brainstorming, plan-writing           |
+| Cloud    | `devops-engineer`     | aws \| google \| azure-advisor, deployment    |
+| Business | `product-manager`     | solo-founder-gtm, plan-writing                |
+| Diagrams | `orchestrator`        | mermaid-studio, excalidraw-studio             |
+| Proj Mgmt| `product-owner`       | jira-assistant, confluence-assistant          |
+| Web App  | `frontend-specialist` | react-best-practices, frontend-blueprint      |
+| API      | `backend-specialist`  | api-patterns, nestjs-modular-monolith         |
+| Mobile   | `mobile-developer`    | mobile-design                                 |
+| Database | `database-architect`  | database-design, prisma-expert                |
+| Security | `security-auditor`    | vulnerability-scanner                         |
+| Testing  | `test-engineer`       | testing-patterns, webapp-testing              |
+| Debug    | `debugger`            | systematic-debugging                          |
+| Plan     | `project-planner`     | brainstorming, tlc-spec-driven                |
