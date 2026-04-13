@@ -12,6 +12,7 @@ package-lock.json
 coverage/
 build_ext/
 openclaude-src/
+mcp-servers
 
 # Security & Credentials
 credentials.json
