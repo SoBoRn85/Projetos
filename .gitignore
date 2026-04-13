@@ -12,3 +12,14 @@ package-lock.json
 coverage/
 build_ext/
 openclaude-src/
+
+# Security & Credentials
+credentials.json
+token.json
+client_secret*.json
+*.log
+.google_workspace_mcp/
+credentials/
+*.p12
+*.pem
+*.key

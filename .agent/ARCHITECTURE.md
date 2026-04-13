@@ -28,7 +28,7 @@ Antigravity Kit is a modular system consisting of:
 
 ---
 
-## 🤖 Agents (20)
+## 🤖 Agents (21)
 
 Specialist AI personas for different domains.
 
@@ -39,6 +39,7 @@ Specialist AI personas for different domains.
 | `frontend-specialist`    | Web UI/UX                  | frontend-design, react-best-practices, tailwind-patterns |
 | `backend-specialist`     | API, business logic        | api-patterns, nodejs-best-practices, database-design     |
 | `database-architect`     | Schema, SQL                | database-design, prisma-expert                           |
+| `automation-engineer`    | RPA, IDP, workflow orch.   | rpa-automation, document-intelligence, supabase-expert, google-sheets-integration |
 | `mobile-developer`       | iOS, Android, RN           | mobile-design                                            |
 | `game-developer`         | Game logic, mechanics      | game-development                                         |
 | `devops-engineer`        | CI/CD, Docker              | deployment-procedures, docker-expert                     |
@@ -72,6 +73,7 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `ui-ux-pro-max`         | 50 styles, 21 palettes, 50 fonts                                      |
 | `frontend-blueprint`    | Blueprints de arquitetura frontend moderna                            |
 | `shopify-developer`     | Desenvolvimento especializado para Shopify                            |
+| `audio-notifications`   | Padrões de design e implementação para notificações sonoras (Web Audio API) |
 
 ### Backend & API
 
@@ -83,12 +85,13 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `python-patterns`       | Python standards, FastAPI                              |
 | `nestjs-modular-monolith`| Padrões para arquitetura modular no NestJS             |
 
-### Database
+### Database & BaaS
 
 | Skill             | Description                 |
 | ----------------- | --------------------------- |
 | `database-design` | Schema design, optimization |
 | `prisma-expert`   | Prisma ORM, migrations      |
+| `supabase-expert` | Supabase Auth, RLS, pgcrypto, Storage, Edge Functions |
 
 ### TypeScript/JavaScript
 
@@ -155,6 +158,14 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `geo-fundamentals` | GenAI optimization                                    |
 | `solo-founder-gtm` | Estratégia Go-to-Market para fundadores (GTM)         |
 | `excalidraw-studio`| Desenho e prototipação com Excalidraw                 |
+
+### Automation & IDP
+
+| Skill                        | Description                                              |
+| ---------------------------- | -------------------------------------------------------- |
+| `rpa-automation`             | RPA with Playwright, state machines, HITL, legacy portals |
+| `document-intelligence`      | IDP with VLMs, CoT, confidence scoring, Context Caching   |
+| `google-sheets-integration`  | Google Sheets API v4, batchUpdate, auth, rate limits      |
 
 ### Shell/CLI
 
@@ -235,12 +246,12 @@ skill-name/
 
 | Metric              | Value                         |
 | ------------------- | ----------------------------- |
-| **Total Agents**    | 20                            |
-| **Total Skills**    | 50                            |
+| **Total Agents**    | 21                            |
+| **Total Skills**    | 55                            |
 | **Total Workflows** | 11                            |
 | **Total Scripts**   | 2 (master) + 21 (skill-level) |
 | **Operational Rules** | 2 (GEMINI, PROTOCOL)       |
-| **Coverage**        | ~95% modern software delivery |
+| **Coverage**        | ~97% modern software delivery |
 
 ---
 
@@ -289,15 +300,6 @@ For details, see [scripts/README.md](scripts/README.md)
 
 ---
 
-## 📊 Statistics
-
-| Metric              | Value                         |
-| ------------------- | ----------------------------- |
-| **Total Agents**    | 20                            |
-| **Total Skills**    | 50                            |
-| **Total Workflows** | 11                            |
-| **Total Scripts**   | 2 (master) + 21 (skill-level) |
-| **Coverage**        | ~95% modern software delivery |
 
 ---
 
@@ -309,7 +311,7 @@ For details, see [scripts/README.md](scripts/README.md)
 | Business | `product-manager`     | solo-founder-gtm, plan-writing                |
 | Diagrams | `orchestrator`        | mermaid-studio, excalidraw-studio             |
 | Proj Mgmt| `product-owner`       | jira-assistant, confluence-assistant          |
-| Web App  | `frontend-specialist` | react-best-practices, frontend-blueprint      |
+| Web App  | `frontend-specialist` | react-best-practices, frontend-design, audio-notifications |
 | API      | `backend-specialist`  | api-patterns, nestjs-modular-monolith         |
 | Mobile   | `mobile-developer`    | mobile-design                                 |
 | Database | `database-architect`  | database-design, prisma-expert                |
@@ -319,3 +321,7 @@ For details, see [scripts/README.md](scripts/README.md)
 | Plan     | `project-planner`     | brainstorming, tlc-spec-driven                |
 | Rules    | `orchestrator`        | global_rules, operational_protocol            |
 | Security | `security-auditor`    | security-best-practices, vulnerability-scanner |
+| Supabase | `automation-engineer` | supabase-expert, database-design              |
+| RPA      | `automation-engineer` | rpa-automation, python-patterns               |
+| IDP/VLM  | `automation-engineer` | document-intelligence, python-patterns        |
+| Sheets   | `automation-engineer` | google-sheets-integration                     |
