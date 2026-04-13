@@ -24,3 +24,4 @@ credentials/
 *.p12
 *.pem
 *.key
+mcp-servers/google_workspace_mcp
